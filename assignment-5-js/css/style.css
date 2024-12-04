@@ -1,0 +1,247 @@
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+
+.bg-of-nav{
+    background-color: #1E202B;
+}
+
+.name-header .tgh{
+   font-size: 10px;
+   font-family: Roboto, "Open Sans", sans-serif;
+   font-weight: 300;
+}
+
+.nav-pills {
+    padding: 20px;
+    margin-top: 20px;
+    --bs-nav-pills-border-radius: 20px;
+    --bs-nav-pills-link-active-color:#0d6efd;
+    --bs-nav-pills-link-active-bg: transparent;
+}
+
+.nav-pills .nav-link {
+    margin-right: 10px;
+    color: white;
+    padding-block: 0;
+    border: 2px transparent solid; 
+}
+.nav-pills .nav-link:hover{
+    color:#0d6efd ;
+    border: 2px #0d6efd solid;
+
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    border: 2px #0d6efd solid;
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: var(--bs-nav-pills-link-active-bg);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.header-banner {
+    background-image: url('../images/banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 60vh; 
+}
+
+.header-background {
+    background-color: #1E202B;
+    height: 40vh; 
+}
+
+header .styled-input{
+    background-color: #1E202B; 
+    border: none; 
+    outline: none; 
+    top: 8%;
+    left: 15%;
+}
+
+ .styled-input::placeholder {
+    color: #aaa; 
+}
+
+ .styled-input:focus {
+    background-color: #1E202B; 
+    box-shadow: none;
+    outline: none; 
+}
+
+header .btn {
+    right: 0;
+    border-radius: 25px;
+    padding: 10px 40px;
+    top:3.45rem ;
+    right: 10%;
+}
+
+
+
+
+.content.container {
+    width: 100%;  
+    padding: 0;
+    margin: 0;
+    top: 25%;
+    left: 50%;
+    margin-bottom: 2rem; 
+
+}
+
+.row.no-gutters {
+    margin: 0;
+    padding: 0;
+    }
+
+.col-md-4 {
+    padding: 0;
+}
+
+.card {
+    height: 50%;
+    display: flex;
+}
+
+.first , .third {
+    background-color: #323544 ;  
+}
+
+.second {
+    background-color: #262936; 
+}
+
+.header-1 , .header-3 {
+    background-color: #2D303D;
+    color: gray;
+}
+
+.header-2{
+    background-color: #222530;
+    color: gray;
+}
+.body-1 , .body-3{
+background-color: #323544;
+}
+.body-2{
+background-color: #262936;
+}
+
+.temperature-1{
+    font-size: 90px ;
+    font-family: Roboto, "Open Sans", sans-serif;
+    font-weight: 700 ;
+    color: white;
+}
+.temperature-2{
+    font-size: 24px ;
+    font-family:Roboto, "Open Sans", sans-serif;
+    font-weight: 700 ;
+    color: white;
+}
+
+.temperature-2 span{
+    font-size: 16px;
+    font-weight:400 ;
+    font-family:Arial, sans-serif ;
+    color: gray;
+}
+.temperature-2 h3{
+    font-size: 24px;
+    font-weight:700 ;
+    font-family:Roboto, "Open Sans", sans-serif ;
+}
+
+
+footer{
+    background-color: #262936;
+    padding: 3rem;
+    padding-top: 2rem; 
+    
+    
+}
+footer .btn{
+    right: 0;
+    border-radius: 25px;
+    padding: 10px 40px;
+    top:5px ;
+    right:0;
+}
+
+footer .styled-input{
+    background-color: #1E202B; 
+    border: none; 
+    outline: none; 
+}
+
+
+.icons {
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+    color: #009AD8;
+    width: 40px; 
+    height: 40px;
+    border: 2px solid #1E202B;
+    border-radius: 50%;
+    transition: all 0.3s ; 
+    background-color: #1E202B;
+    margin-right: 2px;
+}
+
+.icons:hover {
+    color: white; 
+    border-color: var(--bs-primary); 
+    background-color: var(--bs-primary); 
+}
+
+
+
+@media (max-width: 768px) {
+    .bg-of-nav img {
+        width: 50%; 
+    }
+
+    .name-header a.h1 {
+        font-size: 1.5rem; 
+    }
+
+    ul.nav {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-end; 
+    }
+    .img-a-nav{
+        padding-bottom:4rem;
+    }
+
+
+
+
+    footer {
+        padding-top: 35rem;
+    }
+
+    .footer-btn {
+        width: 30%;
+        display: flex; 
+        justify-content: center;
+    }
+
+    .footer input {
+        width: 100%;
+    }
+}
+
+
